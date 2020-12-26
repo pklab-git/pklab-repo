@@ -1,0 +1,3 @@
+variable "cname" {
+  default = "hsbc"
+}
