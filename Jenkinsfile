@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('my terraform init'){
 steps{
-   bat 'terraform init'
+   bat 'terraform plan'
 }
 
         }
