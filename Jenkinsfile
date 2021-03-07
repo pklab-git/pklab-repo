@@ -6,7 +6,7 @@ stages {
 
         steps{
                 script {
-                    creates3bucket(my-bucket-304584)
+                    creates3bucket('my-bucket-304584')
                 }
         }
     }
