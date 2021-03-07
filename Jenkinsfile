@@ -14,7 +14,7 @@ stages {
         stage('my terraform init'){
 steps{
    bat returnStatus: true, script: 'terraform workspace new dev'
-   bat 'terraform apply' -auto-approve
+   bat 'terraform apply -auto-approve'
 }
         }
        
