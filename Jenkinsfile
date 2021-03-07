@@ -23,8 +23,9 @@ steps{
 
         }
     }
+}
 
     def creates3bucket(BucketName) {
         bat returnStatus: true, script: 'aws s3 mb ${BucketName} --regio =us-east-1'
     }
-}
+
