@@ -15,7 +15,8 @@ stages {
 steps{
    bat returnStatus: true, script: 'terraform workspace new dev'
   // bat 'terraform apply -auto-approve'
-   bat 'terraform destroy -auto-approve' 
+  // bat 'terraform destroy -auto-approve' 
+    bat 'terraform plan'
 }
         }
        
