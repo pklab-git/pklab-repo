@@ -5,7 +5,11 @@ provider "aws" {
   /*version = ">= 2.20"*/
 }
 
-resource "aws_instance" "mynewec2" {
-   ami = "ami-07dd19a7900a1f049"
-   instance_type = "t2.micro"
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-bucket-35019472"
+  acl    = "private"
 }
+/*resource "aws_instance" "mynewec2" {
+   ami = "ami-09c5e030f74651050"
+   instance_type = "t2.micro"
+}*/
